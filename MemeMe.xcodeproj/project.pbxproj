@@ -9,12 +9,26 @@
 /* Begin PBXBuildFile section */
 		704BE6B51F8A358F3FCAF214 /* Pods_MemeMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EFD157E86E068913DCD0BDD /* Pods_MemeMe.framework */; };
 		EA60DE001C6D183D00C20340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60DDFF1C6D183D00C20340 /* AppDelegate.swift */; };
-		EA60DE021C6D183D00C20340 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60DE011C6D183D00C20340 /* ViewController.swift */; };
 		EA60DE051C6D183D00C20340 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA60DE031C6D183D00C20340 /* Main.storyboard */; };
 		EA60DE071C6D183D00C20340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA60DE061C6D183D00C20340 /* Assets.xcassets */; };
 		EA60DE0A1C6D183D00C20340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA60DE081C6D183D00C20340 /* LaunchScreen.storyboard */; };
 		EA60DE151C6D183D00C20340 /* MemeMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60DE141C6D183D00C20340 /* MemeMeTests.swift */; };
 		EA60DE201C6D183D00C20340 /* MemeMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60DE1F1C6D183D00C20340 /* MemeMeUITests.swift */; };
+		EA60DE2F1C6D1D9600C20340 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60DE2E1C6D1D9600C20340 /* EditViewController.swift */; };
+		EA60DE301C6D1D9600C20340 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60DE2E1C6D1D9600C20340 /* EditViewController.swift */; };
+		EA60DE311C6D1D9600C20340 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60DE2E1C6D1D9600C20340 /* EditViewController.swift */; };
+		EA60DE341C6D1E3A00C20340 /* ControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60DE331C6D1E3A00C20340 /* ControllerAssembly.swift */; };
+		EA60DE351C6D1E3A00C20340 /* ControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60DE331C6D1E3A00C20340 /* ControllerAssembly.swift */; };
+		EA60DE361C6D1E3A00C20340 /* ControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60DE331C6D1E3A00C20340 /* ControllerAssembly.swift */; };
+		EA60DE381C6D1E4A00C20340 /* PresenterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60DE371C6D1E4A00C20340 /* PresenterAssembly.swift */; };
+		EA60DE391C6D1E4A00C20340 /* PresenterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60DE371C6D1E4A00C20340 /* PresenterAssembly.swift */; };
+		EA60DE3A1C6D1E4A00C20340 /* PresenterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60DE371C6D1E4A00C20340 /* PresenterAssembly.swift */; };
+		EA60DE3C1C6D1E7700C20340 /* CommonAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60DE3B1C6D1E7700C20340 /* CommonAssembly.swift */; };
+		EA60DE3D1C6D1E7700C20340 /* CommonAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60DE3B1C6D1E7700C20340 /* CommonAssembly.swift */; };
+		EA60DE3E1C6D1E7700C20340 /* CommonAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60DE3B1C6D1E7700C20340 /* CommonAssembly.swift */; };
+		EA60DE411C6D1F7500C20340 /* PickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60DE401C6D1F7500C20340 /* PickerPresenter.swift */; };
+		EA60DE421C6D1F7500C20340 /* PickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60DE401C6D1F7500C20340 /* PickerPresenter.swift */; };
+		EA60DE431C6D1F7500C20340 /* PickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60DE401C6D1F7500C20340 /* PickerPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +54,6 @@
 		8E3B544C50871E9DE4767245 /* Pods-MemeMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemeMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-MemeMe/Pods-MemeMe.release.xcconfig"; sourceTree = "<group>"; };
 		EA60DDFC1C6D183D00C20340 /* MemeMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA60DDFF1C6D183D00C20340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA60DE011C6D183D00C20340 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA60DE041C6D183D00C20340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA60DE061C6D183D00C20340 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA60DE091C6D183D00C20340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +64,11 @@
 		EA60DE1B1C6D183D00C20340 /* MemeMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemeMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA60DE1F1C6D183D00C20340 /* MemeMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeMeUITests.swift; sourceTree = "<group>"; };
 		EA60DE211C6D183D00C20340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA60DE2E1C6D1D9600C20340 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		EA60DE331C6D1E3A00C20340 /* ControllerAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerAssembly.swift; sourceTree = "<group>"; };
+		EA60DE371C6D1E4A00C20340 /* PresenterAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterAssembly.swift; sourceTree = "<group>"; };
+		EA60DE3B1C6D1E7700C20340 /* CommonAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonAssembly.swift; sourceTree = "<group>"; };
+		EA60DE401C6D1F7500C20340 /* PickerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				EA60DDFF1C6D183D00C20340 /* AppDelegate.swift */,
-				EA60DE011C6D183D00C20340 /* ViewController.swift */,
+				EA60DE321C6D1E2200C20340 /* Assembly */,
+				EA60DE2D1C6D1D8300C20340 /* EditViewController */,
+				EA60DE3F1C6D1F4B00C20340 /* Presenters */,
 				EA60DE031C6D183D00C20340 /* Main.storyboard */,
 				EA60DE061C6D183D00C20340 /* Assets.xcassets */,
 				EA60DE081C6D183D00C20340 /* LaunchScreen.storyboard */,
@@ -147,6 +167,32 @@
 				EA60DE211C6D183D00C20340 /* Info.plist */,
 			);
 			path = MemeMeUITests;
+			sourceTree = "<group>";
+		};
+		EA60DE2D1C6D1D8300C20340 /* EditViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EA60DE2E1C6D1D9600C20340 /* EditViewController.swift */,
+			);
+			path = EditViewController;
+			sourceTree = "<group>";
+		};
+		EA60DE321C6D1E2200C20340 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				EA60DE331C6D1E3A00C20340 /* ControllerAssembly.swift */,
+				EA60DE371C6D1E4A00C20340 /* PresenterAssembly.swift */,
+				EA60DE3B1C6D1E7700C20340 /* CommonAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		EA60DE3F1C6D1F4B00C20340 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				EA60DE401C6D1F7500C20340 /* PickerPresenter.swift */,
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,8 +377,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA60DE021C6D183D00C20340 /* ViewController.swift in Sources */,
+				EA60DE2F1C6D1D9600C20340 /* EditViewController.swift in Sources */,
 				EA60DE001C6D183D00C20340 /* AppDelegate.swift in Sources */,
+				EA60DE411C6D1F7500C20340 /* PickerPresenter.swift in Sources */,
+				EA60DE3C1C6D1E7700C20340 /* CommonAssembly.swift in Sources */,
+				EA60DE381C6D1E4A00C20340 /* PresenterAssembly.swift in Sources */,
+				EA60DE341C6D1E3A00C20340 /* ControllerAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +390,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA60DE301C6D1D9600C20340 /* EditViewController.swift in Sources */,
 				EA60DE151C6D183D00C20340 /* MemeMeTests.swift in Sources */,
+				EA60DE421C6D1F7500C20340 /* PickerPresenter.swift in Sources */,
+				EA60DE3D1C6D1E7700C20340 /* CommonAssembly.swift in Sources */,
+				EA60DE391C6D1E4A00C20340 /* PresenterAssembly.swift in Sources */,
+				EA60DE351C6D1E3A00C20340 /* ControllerAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +403,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA60DE311C6D1D9600C20340 /* EditViewController.swift in Sources */,
 				EA60DE201C6D183D00C20340 /* MemeMeUITests.swift in Sources */,
+				EA60DE431C6D1F7500C20340 /* PickerPresenter.swift in Sources */,
+				EA60DE3E1C6D1E7700C20340 /* CommonAssembly.swift in Sources */,
+				EA60DE3A1C6D1E4A00C20340 /* PresenterAssembly.swift in Sources */,
+				EA60DE361C6D1E3A00C20340 /* ControllerAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
