@@ -14,15 +14,16 @@ class ControllerAssembly: TyphoonAssembly {
     
     //Inject
     var presenterAssembly: PresenterAssembly!
+    var commonAssembly: CommonAssembly!
     
     
     //MARK: PUBLIC
     //MARK: EditViewController
-    
     internal dynamic func editViewController() -> AnyObject {
         return TyphoonDefinition.withClass(EditViewController.self) {
             (definition) in
                 definition.injectProperty("presenterAssembly", with: self.presenterAssembly)
+                definition.injectProperty("localNotificationManager", with: self.commonAssembly.localNotificationManager())
         }
     }
     

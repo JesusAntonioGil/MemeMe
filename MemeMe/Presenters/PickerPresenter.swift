@@ -11,6 +11,7 @@ import UIKit
 
 @objc protocol PickerPresenterDelegate {
 
+    func presenterCameraImage(image: UIImage, editingInfo: [String : AnyObject]?)
 }
 
 
@@ -18,5 +19,27 @@ class PickerPresenter: NSObject {
 
     //Injected
     var delegate: PickerPresenterDelegate!
+    var cameraManager: CameraManager!
     
+    
+    //MARK: PUBLIC
+    
+    func showPicker(sourceType: UIImagePickerControllerSourceType){
+        cameraManager.delegate = self
+        cameraManager.presentCamera(sourceType)
+    }
+    
+    func checkCameraAvailable() -> Bool {
+        return CameraManager.checkCameraAvailable()
+    }
+}
+
+
+//MARK: CameraManager Delegate
+
+extension PickerPresenter: CameraManagerDelegate {
+    
+    func cameraDidPhotoWithImage(image: UIImage, editingInfo: [String : AnyObject]?) {
+        delegate.presenterCameraImage(image, editingInfo: editingInfo)
+    }
 }

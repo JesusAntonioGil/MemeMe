@@ -12,14 +12,26 @@ import Typhoon
 
 class PresenterAssembly: TyphoonAssembly {
 
+    //Injected
+    var commonAssembly: CommonAssembly!
+    
+    
     //MARK: PUBLIC
     //MARK: PickerPresenter
-    
-    internal dynamic func pickerPresenter(delegate: PickerPresenterDelegate) -> AnyObject {
+    internal dynamic func pickerPresenter(delegate: PickerPresenterDelegate, viewController: UIViewController) -> AnyObject {
         return TyphoonDefinition.withClass(PickerPresenter.self) {
             (definition) in
                 definition.injectProperty("delegate", with: delegate)
+                definition.injectProperty("cameraManager", with: self.commonAssembly.cameraManager(viewController))
         }
     }
     
+    //MARK: SharePresenter
+    internal dynamic func sharePresenter(delegate: SharePresenterDelegate, viewController: UIViewController) -> AnyObject {
+        return TyphoonDefinition.withClass(SharePresenter.self) {
+            (definition) in
+                definition.injectProperty("delegate", with: delegate)
+                definition.injectProperty("activityManager", with: self.commonAssembly.activityManager(viewController))
+        }
+    }
 }

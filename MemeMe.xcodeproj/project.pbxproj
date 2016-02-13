@@ -29,6 +29,18 @@
 		EA60DE411C6D1F7500C20340 /* PickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60DE401C6D1F7500C20340 /* PickerPresenter.swift */; };
 		EA60DE421C6D1F7500C20340 /* PickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60DE401C6D1F7500C20340 /* PickerPresenter.swift */; };
 		EA60DE431C6D1F7500C20340 /* PickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60DE401C6D1F7500C20340 /* PickerPresenter.swift */; };
+		EA77A7BC1C6F941F0011CCC7 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A7BB1C6F941F0011CCC7 /* LocalNotificationManager.swift */; };
+		EA77A7BD1C6F941F0011CCC7 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A7BB1C6F941F0011CCC7 /* LocalNotificationManager.swift */; };
+		EA77A7BE1C6F941F0011CCC7 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A7BB1C6F941F0011CCC7 /* LocalNotificationManager.swift */; };
+		EA77A7C01C6F96B70011CCC7 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A7BF1C6F96B70011CCC7 /* CameraManager.swift */; };
+		EA77A7C11C6F96B70011CCC7 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A7BF1C6F96B70011CCC7 /* CameraManager.swift */; };
+		EA77A7C21C6F96B70011CCC7 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A7BF1C6F96B70011CCC7 /* CameraManager.swift */; };
+		EA77A7C41C6F9B740011CCC7 /* ActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A7C31C6F9B740011CCC7 /* ActivityManager.swift */; };
+		EA77A7C51C6F9B740011CCC7 /* ActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A7C31C6F9B740011CCC7 /* ActivityManager.swift */; };
+		EA77A7C61C6F9B740011CCC7 /* ActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A7C31C6F9B740011CCC7 /* ActivityManager.swift */; };
+		EA77A7C81C6F9CD00011CCC7 /* SharePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A7C71C6F9CD00011CCC7 /* SharePresenter.swift */; };
+		EA77A7C91C6F9CD00011CCC7 /* SharePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A7C71C6F9CD00011CCC7 /* SharePresenter.swift */; };
+		EA77A7CA1C6F9CD00011CCC7 /* SharePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77A7C71C6F9CD00011CCC7 /* SharePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +81,10 @@
 		EA60DE371C6D1E4A00C20340 /* PresenterAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterAssembly.swift; sourceTree = "<group>"; };
 		EA60DE3B1C6D1E7700C20340 /* CommonAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonAssembly.swift; sourceTree = "<group>"; };
 		EA60DE401C6D1F7500C20340 /* PickerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerPresenter.swift; sourceTree = "<group>"; };
+		EA77A7BB1C6F941F0011CCC7 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+		EA77A7BF1C6F96B70011CCC7 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		EA77A7C31C6F9B740011CCC7 /* ActivityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityManager.swift; sourceTree = "<group>"; };
+		EA77A7C71C6F9CD00011CCC7 /* SharePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +159,7 @@
 				EA60DE321C6D1E2200C20340 /* Assembly */,
 				EA60DE2D1C6D1D8300C20340 /* EditViewController */,
 				EA60DE3F1C6D1F4B00C20340 /* Presenters */,
+				EA77A7BA1C6F93FB0011CCC7 /* Model */,
 				EA60DE031C6D183D00C20340 /* Main.storyboard */,
 				EA60DE061C6D183D00C20340 /* Assets.xcassets */,
 				EA60DE081C6D183D00C20340 /* LaunchScreen.storyboard */,
@@ -191,8 +208,19 @@
 			isa = PBXGroup;
 			children = (
 				EA60DE401C6D1F7500C20340 /* PickerPresenter.swift */,
+				EA77A7C71C6F9CD00011CCC7 /* SharePresenter.swift */,
 			);
 			path = Presenters;
+			sourceTree = "<group>";
+		};
+		EA77A7BA1C6F93FB0011CCC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA77A7BB1C6F941F0011CCC7 /* LocalNotificationManager.swift */,
+				EA77A7BF1C6F96B70011CCC7 /* CameraManager.swift */,
+				EA77A7C31C6F9B740011CCC7 /* ActivityManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +294,7 @@
 				TargetAttributes = {
 					EA60DDFB1C6D183D00C20340 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 4JRP4V69AV;
 					};
 					EA60DE0F1C6D183D00C20340 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -377,7 +406,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA77A7C81C6F9CD00011CCC7 /* SharePresenter.swift in Sources */,
+				EA77A7BC1C6F941F0011CCC7 /* LocalNotificationManager.swift in Sources */,
 				EA60DE2F1C6D1D9600C20340 /* EditViewController.swift in Sources */,
+				EA77A7C41C6F9B740011CCC7 /* ActivityManager.swift in Sources */,
+				EA77A7C01C6F96B70011CCC7 /* CameraManager.swift in Sources */,
 				EA60DE001C6D183D00C20340 /* AppDelegate.swift in Sources */,
 				EA60DE411C6D1F7500C20340 /* PickerPresenter.swift in Sources */,
 				EA60DE3C1C6D1E7700C20340 /* CommonAssembly.swift in Sources */,
@@ -390,7 +423,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA77A7C91C6F9CD00011CCC7 /* SharePresenter.swift in Sources */,
+				EA77A7BD1C6F941F0011CCC7 /* LocalNotificationManager.swift in Sources */,
 				EA60DE301C6D1D9600C20340 /* EditViewController.swift in Sources */,
+				EA77A7C51C6F9B740011CCC7 /* ActivityManager.swift in Sources */,
+				EA77A7C11C6F96B70011CCC7 /* CameraManager.swift in Sources */,
 				EA60DE151C6D183D00C20340 /* MemeMeTests.swift in Sources */,
 				EA60DE421C6D1F7500C20340 /* PickerPresenter.swift in Sources */,
 				EA60DE3D1C6D1E7700C20340 /* CommonAssembly.swift in Sources */,
@@ -403,7 +440,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA77A7CA1C6F9CD00011CCC7 /* SharePresenter.swift in Sources */,
+				EA77A7BE1C6F941F0011CCC7 /* LocalNotificationManager.swift in Sources */,
 				EA60DE311C6D1D9600C20340 /* EditViewController.swift in Sources */,
+				EA77A7C61C6F9B740011CCC7 /* ActivityManager.swift in Sources */,
+				EA77A7C21C6F96B70011CCC7 /* CameraManager.swift in Sources */,
 				EA60DE201C6D183D00C20340 /* MemeMeUITests.swift in Sources */,
 				EA60DE431C6D1F7500C20340 /* PickerPresenter.swift in Sources */,
 				EA60DE3E1C6D1E7700C20340 /* CommonAssembly.swift in Sources */,
@@ -533,10 +574,13 @@
 			baseConfigurationReference = 7E2EA95D46B17FC26EB0452D /* Pods-MemeMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MemeMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jag.MemeMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -545,10 +589,13 @@
 			baseConfigurationReference = 8E3B544C50871E9DE4767245 /* Pods-MemeMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MemeMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jag.MemeMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
