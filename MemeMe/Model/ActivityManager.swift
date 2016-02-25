@@ -22,6 +22,10 @@ class ActivityManager: NSObject {
         let shareItems = [meme.memeImage]
         let activityViewController: UIActivityViewController = UIActivityViewController(activityItems: shareItems, applicationActivities: nil)
         activityViewController.excludedActivityTypes = [UIActivityTypePrint, UIActivityTypePostToWeibo, UIActivityTypeCopyToPasteboard, UIActivityTypeAddToReadingList, UIActivityTypePostToVimeo]
+        activityViewController.completionWithItemsHandler =  {
+            (activity, success, items, error) in
+            UIImageWriteToSavedPhotosAlbum(meme.memeImage, nil, nil, nil)
+        }
         viewController.presentViewController(activityViewController, animated: true, completion: nil)
     }
     
@@ -33,3 +37,4 @@ class ActivityManager: NSObject {
         return img;
     }
 }
+
