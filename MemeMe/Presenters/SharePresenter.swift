@@ -23,8 +23,8 @@ class SharePresenter: NSObject {
     
     //MARK: PUBLIC
     
-    func shareImage(image: UIImage) {
-        activityManager.shareImage(image)
+    func shareImage(meme: Meme) {
+        activityManager.shareImage(meme)
     }
     
     func getImageFromView(view: UIView) -> UIImage {

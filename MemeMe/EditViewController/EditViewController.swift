@@ -8,6 +8,12 @@
 
 import UIKit
 
+struct Meme {
+    var topText: String
+    var bottomText: String
+    var image: UIImage
+    var memeImage: UIImage
+}
 
 class EditViewController: UIViewController {
     
@@ -108,7 +114,8 @@ class EditViewController: UIViewController {
     
     @IBAction func onShareButtonTap(sender: AnyObject) {
         view.endEditing(true)
-        sharePresenter.shareImage(sharePresenter.getImageFromView(shareView))
+        let meme = Meme(topText: topTextField.text!, bottomText: bottomTextField.text!, image: photoImageView.image!, memeImage: sharePresenter.getImageFromView(shareView))
+        sharePresenter.shareImage(meme)
     }
     
     @IBAction func onCancelButtonTap(sender: AnyObject) {

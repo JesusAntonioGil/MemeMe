@@ -18,8 +18,8 @@ class ActivityManager: NSObject {
     
     //MARK: PUBLIC
     
-    func shareImage(image: UIImage) {
-        let shareItems = [image]
+    func shareImage(meme: Meme) {
+        let shareItems = [meme.memeImage]
         let activityViewController: UIActivityViewController = UIActivityViewController(activityItems: shareItems, applicationActivities: nil)
         activityViewController.excludedActivityTypes = [UIActivityTypePrint, UIActivityTypePostToWeibo, UIActivityTypeCopyToPasteboard, UIActivityTypeAddToReadingList, UIActivityTypePostToVimeo]
         viewController.presentViewController(activityViewController, animated: true, completion: nil)
