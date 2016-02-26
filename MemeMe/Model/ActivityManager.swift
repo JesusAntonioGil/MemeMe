@@ -14,6 +14,7 @@ class ActivityManager: NSObject {
 
     //Injected
     var viewController: UIViewController!
+    var userDefaultsManager: UserDefaultsManager!
     
     
     //MARK: PUBLIC
@@ -24,7 +25,7 @@ class ActivityManager: NSObject {
         activityViewController.excludedActivityTypes = [UIActivityTypePrint, UIActivityTypePostToWeibo, UIActivityTypeCopyToPasteboard, UIActivityTypeAddToReadingList, UIActivityTypePostToVimeo]
         activityViewController.completionWithItemsHandler =  {
             (activity, success, items, error) in
-            UIImageWriteToSavedPhotosAlbum(meme.memeImage, nil, nil, nil)
+            self.userDefaultsManager.saveImage(meme.memeImage)
         }
         viewController.presentViewController(activityViewController, animated: true, completion: nil)
     }

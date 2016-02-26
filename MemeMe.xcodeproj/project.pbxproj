@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		704BE6B51F8A358F3FCAF214 /* Pods_MemeMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EFD157E86E068913DCD0BDD /* Pods_MemeMe.framework */; };
+		EA2962D11C80F177005049B7 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2962D01C80F177005049B7 /* UserDefaultsManager.swift */; };
+		EA2962D21C80F29F005049B7 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2962D01C80F177005049B7 /* UserDefaultsManager.swift */; };
+		EA2962D31C80F29F005049B7 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2962D01C80F177005049B7 /* UserDefaultsManager.swift */; };
 		EA60DE001C6D183D00C20340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60DDFF1C6D183D00C20340 /* AppDelegate.swift */; };
 		EA60DE051C6D183D00C20340 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA60DE031C6D183D00C20340 /* Main.storyboard */; };
 		EA60DE071C6D183D00C20340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA60DE061C6D183D00C20340 /* Assets.xcassets */; };
@@ -64,6 +67,7 @@
 		6EFD157E86E068913DCD0BDD /* Pods_MemeMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemeMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E2EA95D46B17FC26EB0452D /* Pods-MemeMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemeMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MemeMe/Pods-MemeMe.debug.xcconfig"; sourceTree = "<group>"; };
 		8E3B544C50871E9DE4767245 /* Pods-MemeMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemeMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-MemeMe/Pods-MemeMe.release.xcconfig"; sourceTree = "<group>"; };
+		EA2962D01C80F177005049B7 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		EA60DDFC1C6D183D00C20340 /* MemeMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA60DDFF1C6D183D00C20340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA60DE041C6D183D00C20340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -219,6 +223,7 @@
 				EA77A7BB1C6F941F0011CCC7 /* LocalNotificationManager.swift */,
 				EA77A7BF1C6F96B70011CCC7 /* CameraManager.swift */,
 				EA77A7C31C6F9B740011CCC7 /* ActivityManager.swift */,
+				EA2962D01C80F177005049B7 /* UserDefaultsManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -410,6 +415,7 @@
 				EA77A7BC1C6F941F0011CCC7 /* LocalNotificationManager.swift in Sources */,
 				EA60DE2F1C6D1D9600C20340 /* EditViewController.swift in Sources */,
 				EA77A7C41C6F9B740011CCC7 /* ActivityManager.swift in Sources */,
+				EA2962D11C80F177005049B7 /* UserDefaultsManager.swift in Sources */,
 				EA77A7C01C6F96B70011CCC7 /* CameraManager.swift in Sources */,
 				EA60DE001C6D183D00C20340 /* AppDelegate.swift in Sources */,
 				EA60DE411C6D1F7500C20340 /* PickerPresenter.swift in Sources */,
@@ -427,6 +433,7 @@
 				EA77A7BD1C6F941F0011CCC7 /* LocalNotificationManager.swift in Sources */,
 				EA60DE301C6D1D9600C20340 /* EditViewController.swift in Sources */,
 				EA77A7C51C6F9B740011CCC7 /* ActivityManager.swift in Sources */,
+				EA2962D21C80F29F005049B7 /* UserDefaultsManager.swift in Sources */,
 				EA77A7C11C6F96B70011CCC7 /* CameraManager.swift in Sources */,
 				EA60DE151C6D183D00C20340 /* MemeMeTests.swift in Sources */,
 				EA60DE421C6D1F7500C20340 /* PickerPresenter.swift in Sources */,
@@ -444,6 +451,7 @@
 				EA77A7BE1C6F941F0011CCC7 /* LocalNotificationManager.swift in Sources */,
 				EA60DE311C6D1D9600C20340 /* EditViewController.swift in Sources */,
 				EA77A7C61C6F9B740011CCC7 /* ActivityManager.swift in Sources */,
+				EA2962D31C80F29F005049B7 /* UserDefaultsManager.swift in Sources */,
 				EA77A7C21C6F96B70011CCC7 /* CameraManager.swift in Sources */,
 				EA60DE201C6D183D00C20340 /* MemeMeUITests.swift in Sources */,
 				EA60DE431C6D1F7500C20340 /* PickerPresenter.swift in Sources */,

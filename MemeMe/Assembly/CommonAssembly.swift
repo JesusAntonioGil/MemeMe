@@ -34,6 +34,16 @@ class CommonAssembly: TyphoonAssembly {
         return TyphoonDefinition.withClass(ActivityManager.self) {
             (definition) in
                 definition.injectProperty("viewController", with: viewController)
+                definition.injectProperty("userDefaultsManager", with: self.userDefaultsManager())
+        }
+    }
+    
+    //MARK: UserDefaultsManager
+    internal dynamic func userDefaultsManager() -> AnyObject {
+        return TyphoonDefinition.withClass(UserDefaultsManager.self) {
+            (definition) in
+                definition.injectProperty("userDefaults", with: NSUserDefaults.standardUserDefaults())
+                definition.scope = .Singleton
         }
     }
 }
